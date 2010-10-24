@@ -312,7 +312,8 @@ style "comboboxentry" = "notebook_button" {
 #		lightborder_shade = 1.23
 #	}
 #}
-style "menubar" { }
+style "menubar" {
+}
 
 style "toolbar" {
 	engine "murrine" {
@@ -344,7 +345,7 @@ style "menu_item" = "menu" {
 	xthickness = 2
 	ythickness = 3
 
-#	fg[PRELIGHT] = @selected_fg_color
+	fg[PRELIGHT] = @selected_fg_color
 
 	engine "murrine"
 	{
@@ -357,6 +358,8 @@ style "menu_item" = "menu" {
 style "menubar_item" = "menu" {
 	xthickness = 2
 	ythickness = 3
+
+	fg[PRELIGHT] = @text_color
 
 	engine "murrine" {
 		gradient_shades = {1.1, 1.0, 1.0, 0.88}
