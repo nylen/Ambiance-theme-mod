@@ -304,14 +304,15 @@ style "comboboxentry" = "notebook_button" {
 	}
 }
 
-style "menubar" = "dark" {
-	engine "murrine" {
-		textstyle = 2
-		text_shade = 0.33
-		gradient_shades = {1.0, 1.0, 1.0, 1.0}
-		lightborder_shade = 1.23
-	}
-}
+#style "menubar" = "dark" {
+#	engine "murrine" {
+#		textstyle = 2
+#		text_shade = 0.33
+#		gradient_shades = {1.0, 1.0, 1.0, 1.0}
+#		lightborder_shade = 1.23
+#	}
+#}
+style "menubar" { }
 
 style "toolbar" {
 	engine "murrine" {
@@ -325,13 +326,13 @@ style "toolbar-button" = "notebook_button" {
 	}
 }
 
-style "menu" = "dark" {
+style "menu" {
 	xthickness = 0
 	ythickness = 0
 
-	bg[NORMAL] = "#43423f"
-	bg[INSENSITIVE] = "#43423f"
-	fg[INSENSITIVE]   = shade (0.54, "#43423f")
+#	bg[NORMAL] = "#43423f"
+#	bg[INSENSITIVE] = "#43423f"
+#	fg[INSENSITIVE]   = shade (0.54, "#43423f")
 
 	engine "murrine"
 	{
@@ -343,7 +344,7 @@ style "menu_item" = "menu" {
 	xthickness = 2
 	ythickness = 3
 
-	fg[PRELIGHT] = @selected_fg_color
+#	fg[PRELIGHT] = @selected_fg_color
 
 	engine "murrine"
 	{
